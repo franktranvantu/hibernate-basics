@@ -8,3 +8,8 @@ What you'll learn
 - Connecting with JDBC
 - Object-Relational Mapping (ORM)
 - Wrapping a database with Hibernate
+
+For best results, we recommend first taking these prerequisite courses...
+- Java Annotations
+- SQL Basics
+- Modifying Data with SQL
