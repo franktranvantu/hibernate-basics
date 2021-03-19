@@ -1,11 +1,14 @@
 package com.franktran;
 
 import com.franktran.model.Contact;
+import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+
+import java.util.List;
 
 public class Application {
 
@@ -23,7 +26,28 @@ public class Application {
                 .withEmail("franktran@gmail.com")
                 .withPhone(1112223334L)
                 .build();
-        System.out.println(contact);
+        save(contact);
+
+        List<Contact> contacts = fetchAllContacts();
+        contacts.forEach(System.out::println);
+    }
+
+    @SuppressWarnings("unchecked")
+    private static List<Contact> fetchAllContacts() {
+        // Open a session
+        Session session = SESSION_FACTORY.openSession();
+
+        // Create Criteria
+        Criteria criteria = session.createCriteria(Contact.class);
+        List<Contact> contacts = criteria.list();
+
+        // Close the session
+        session.close();
+
+        return contacts;
+    }
+
+    public static void save(Contact contact) {
         // Open a session
         Session session = SESSION_FACTORY.openSession();
 
