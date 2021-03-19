@@ -1,3 +1,3 @@
-# The Builder Design Pattern
+# Saving Data with Hibernate
 
-As a step away from Hibernate, this lesson demonstrates a popular design pattern in coding called the **builder** design pattern. This pattern is used to write *readable* code that creates and configures an object.
+This lesson demonstrates the use of a Hibernate `SessionFactory` to save a new entity to the database.
