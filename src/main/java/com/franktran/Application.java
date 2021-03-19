@@ -29,7 +29,7 @@ public class Application {
         save(contact);
 
         List<Contact> contacts = fetchAllContacts();
-        contacts.forEach(System.out::println);
+        contacts.stream().forEach(System.out::println);
     }
 
     @SuppressWarnings("unchecked")
