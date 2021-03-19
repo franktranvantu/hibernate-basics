@@ -1,3 +1,3 @@
-# Adding a POJO with JPA Annotations
+# Building a Hibernate SessionFactory
 
-One of the biggest advantages of using an ORM such as Hibernate is the ability to quickly configure model POJOs for mapping to database tables and columns. You will use JPA (Java Persistence API) annotations to define these mappings.
+Before you can fully leverage the power of Hibernate, you will need to create the one object that encapsulates all of our mappings and also includes all information needed to connect to the database. The object of focus for this section is a Hibernate `SessionFactory`.
