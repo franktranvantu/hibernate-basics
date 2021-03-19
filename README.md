@@ -1,3 +1,3 @@
-# Save a Java Object to a Database
+# Configuring a Project to Use Hibernate
 
-As a step up from the last exercise of saving individual parts of a contact to a database, you will now explore how we might store a contact object into the database.
+Configuring a project to use Hibernate involves a couple simple steps. In this lesson, you will see how to add the Hibernate dependency to your Gradle build file and include a Hibernate configuration file in XML format.
