@@ -1,3 +1,3 @@
-# Using Java to Connect to a Database
+# Save a Java Object to a Database
 
-Up to this point, you have interacted only directly with a database using SQL. You will now tackle the task of using Java for connecting to a database.
+As a step up from the last exercise of saving individual parts of a contact to a database, you will now explore how we might store a contact object into the database.
