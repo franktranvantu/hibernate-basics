@@ -1,3 +1,3 @@
-# Configuring a Project to Use Hibernate
+# Adding a POJO with JPA Annotations
 
-Configuring a project to use Hibernate involves a couple simple steps. In this lesson, you will see how to add the Hibernate dependency to your Gradle build file and include a Hibernate configuration file in XML format.
+One of the biggest advantages of using an ORM such as Hibernate is the ability to quickly configure model POJOs for mapping to database tables and columns. You will use JPA (Java Persistence API) annotations to define these mappings.
