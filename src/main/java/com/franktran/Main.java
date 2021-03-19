@@ -22,7 +22,7 @@ public class Main {
             // TODO: Insert a couple contacts
             statement.executeUpdate("INSERT INTO contacts (first_name, last_name, email, phone) VALUES ('Frank', 'Tran', 'franktran@gmail.com', 0123456789)");
             statement.executeUpdate("INSERT INTO contacts (first_name, last_name, email, phone) VALUES ('Henry', 'Tran', 'henrytran@gmail.com', 0123444555)");
-            statement.executeUpdate("INSERT INTO contacts (first_name, last_name, email, phone) VALUES ('Bean', 'Nguyen', 'beannguyen@gmail.com', 0123666777))");
+            statement.executeUpdate("INSERT INTO contacts (first_name, last_name, email, phone) VALUES ('Bean', 'Nguyen', 'beannguyen@gmail.com', 0123666777)");
 
             // TODO: Fetch all the records from the contacts table
             ResultSet rs = statement.executeQuery("SELECT * FROM contacts");
@@ -33,7 +33,7 @@ public class Main {
                 String firstName = rs.getString("first_name");
                 String lastName = rs.getString("last_name");
 
-                System.out.printf("%s %s (%d)", firstName, lastName, id);
+                System.out.printf("%s %s (%d)%n", firstName, lastName, id);
             }
 
         } catch (SQLException ex) {
