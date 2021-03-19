@@ -1,3 +1,3 @@
-# Fetching Data with Hibernate
+# Updating and Deleting Entities
 
-We now have data stored in our database - great! Eventually you will want to retrieve that data, so in this video you will use a Hibernate `Session` to get a list of all contacts stored in the database. You will do this by leveraging a Hibernate `Criteria` object.
+Moving on through the CRUD operations, you have yet to cover updating and deleting. In this lesson, you again use the Hibernate `Session` to perform these operations.
